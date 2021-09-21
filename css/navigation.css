@@ -1,0 +1,139 @@
+.navigation {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #dbe9cf;
+    transition: 0.5s;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+.navigation.active{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.navigation .navArea {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation .navArea ul li{
+    list-style: none;
+    margin-left: 2%;
+}
+
+.navigation .navArea ul li a{
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.navigation .navArea ul li:hover a{
+    color: rgba(255, 255, 255, 1);
+}
+.imgArea{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgArea .text{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-right: 3%;
+}
+.imgArea img{
+    position : relative;
+    top : -50px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.menuToggle{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background: #fff url(/content/menu.png);
+    z-index: 1000;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.menuToggle.active {
+    position: fixed;
+    background: #fff url(/content/close.png);
+    z-index: 1000;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.mapArea {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    background: #fff;
+}
+.mapArea img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mapArea .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1.5em;
+    font-weight: 600;
+    z-index: 20;
+    padding: 1em;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .navigation{
+        position: fixed;
+        flex-direction: column;
+    }
+    .navigation .navArea {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgArea{
+        width: 0%;
+        display: none;
+    }
+    .mapArea {
+        width: 100%;
+        height: 40%;
+        background: #fff ;
+    }
+}
