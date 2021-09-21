@@ -6,6 +6,9 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    z-index: 5;
+    position: relative;
+    background: #dbe9cf;
 }
 .slider{
     width: 100%;

@@ -7,16 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/main-slider.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="js/navigation.js" defer></script>
     <script src="js/main-slider.js" defer></script>
 </head>
 <body>
 
-    <div class="toggleContainer">
+<div class="toggleContainer">
     <div class="menuToggle" onclick="toggleMenu()"></div>
-    </div>
-    <div class="navContainer"> 
+</div>
+
+<div class="navContainer"> 
     <div class="navigation">
 
         <div class="navArea">
@@ -54,53 +55,20 @@
                 <p>+33 6 49 45 78 56</p>
             </div>
         </div>
-        </div>
-    </div>
-
-<div class="slider-container">
-    <div class="slider">
-        <div class="slides">
-
-            <input type="radio" name="radio-btn" id="photo1">
-            <input type="radio" name="radio-btn" id="photo2">
-            <input type="radio" name="radio-btn" id="photo3">
-            <input type="radio" name="radio-btn" id="photo4">
-
-            <div class="slide first">
-                <img src="content/photo-1-small.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="content/photo-2-small.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="content/photo-3-small.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="content/photo-4-small.jpg" alt="">
-            </div>
-
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-
-        </div>
-        <div class="navigation-manual">
-            <label for="photo1" class="manual-btn"></label>
-            <label for="photo2" class="manual-btn"></label>
-            <label for="photo3" class="manual-btn"></label>
-            <label for="photo4" class="manual-btn"></label>
-        </div>
     </div>
 </div>
-<section>
-    
-</section>
-<footer class="fixed-footer">
+<div class="containerTitle">
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+</div>
 
-</footer>
+<form action="" class="contact-form">
+    <input type="text" class="contact-form-text" placeholder="Votre nom...">
+    <input type="email" class="contact-form-text" placeholder="Votre Email...">
+    <input type="text" class="contact-form-text" placeholder="Votre numéro de téléphone...">
+    <textarea class="contact-form-text" placeholder="Description..."></textarea>
+    <input type="submit" class="contact-form-btn" value="Envoyer">
+</form>
 
-</body>
-</html>
+    </html>

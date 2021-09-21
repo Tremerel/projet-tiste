@@ -1,22 +1,37 @@
+
+.navContainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition: 0.5s;
+    visibility: visible;
+    z-index: 100;
+}
+.navContainer.active{
+    left: 0;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.61);
+
+}
 .navigation {
     z-index: 10;
     position: fixed;
     top: 0;
     left: -100%;
-    width: 100%;
+    width: 75%;
     height: 100vh;
     background: #dbe9cf;
-    transition: 0.5s;
+    transition: 1s;
     display: flex;
     visibility: visible;
-    opacity: 1;
 }
 .navigation.active{
     left: 0;
     visibility: visible;
-    opacity: 1;
+    background: #dbe9cf;
 }
-.navigation .navArea {
+.navArea {
     position: relative;
     width: 30%;
     height: 100%;
@@ -24,18 +39,18 @@
     justify-content: center;
     align-items: center;
 }
-.navigation .navArea ul li{
+.navArea ul li{
     list-style: none;
     margin-left: 2%;
 }
 
-.navigation .navArea ul li a{
+.navArea ul li a{
     font-size: 3em;
     font-weight: 600;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
-.navigation .navArea ul li:hover a{
+.navArea ul li:hover a{
     color: rgba(255, 255, 255, 1);
 }
 .imgArea{
@@ -50,7 +65,7 @@
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    font-size: 3em;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 30px;
     margin-right: 3%;
@@ -71,7 +86,7 @@
     left: 40px;
     width: 50px;
     height: 50px;
-    background: #fff url(/content/menu.png);
+    background: #fff url(../content/menu.png);
     z-index: 1000;
     background-size: 30px;
     background-repeat: no-repeat;
@@ -80,7 +95,7 @@
 }
 .menuToggle.active {
     position: fixed;
-    background: #fff url(/content/close.png);
+    background: #fff url(../content/close.png);
     z-index: 1000;
     background-size: 30px;
     background-repeat: no-repeat;
@@ -112,6 +127,7 @@
     font-weight: 600;
     z-index: 20;
     padding: 1em;
+    text-align: right;
 }
 
 @media screen and (max-width: 1140px) {
@@ -119,6 +135,7 @@
     .navigation{
         position: fixed;
         flex-direction: column;
+        width: 100%;
     }
     .navigation .navArea {
         width: 100%;

@@ -6,4 +6,22 @@
 }
 body{
     background: #dbe9cf;
+
 }
+
+/* Footer part */
+/* section{
+    position: relative;
+    height: 100%;
+    margin-bottom: 400px;
+    background: #dbe9cf;
+    z-index: 3;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 150px;
+    background: black;
+} */
